@@ -1,11 +1,11 @@
-﻿-- Function used: 
+﻿-- Function used: JOIN, DISTINCT, GROUPBY, ORDERBY, HAVING, CASE, CONVERT, PARTITION BY, CTEs and SUBQUERIES
 
 SELECT *
 FROM men_bags
 
 -- 1,
 
--- Total sales of bags 
+-- Total sales of bag
 
 SELECT SUM(Total_quantity_sold) AS Total_bags_quantity_sold
 FROM (
@@ -406,10 +406,269 @@ ORDER BY SUM(quantity_sold) + SUM(vnd_cashback) DESC
 
 -- 15,
 
+-- Number of bag products with and without video:
+
+SELECT has_video, COUNT(*) AS men_bag_video_count
+FROM men_bags
+GROUP BY has_video
+
+SELECT has_video, COUNT(*) AS women_bag_video_count
+FROM women_bags
+GROUP BY has_video
+
+-- Number of shoes products with and without video:
+
+SELECT has_video, COUNT(*) AS men_shoes_video_count
+FROM men_shoes
+GROUP BY has_video
+
+SELECT has_video, COUNT(*) AS women_shoes_video_count
+FROM women_shoes
+GROUP BY has_video
+
+-- 16,
+
+-- Average rating ratio between men's bags and women's shoes
+
+SELECT category, AVG(CONVERT(float, rating_average)) as avg_bag_rating
+FROM men_bags
+GROUP BY category 
+
+SELECT category, AVG(CONVERT(float, rating_average)) as avg_shoe_rating
+FROM men_shoes
+GROUP BY category 
+
+-- Average rating ratio between women's bags and women's shoes
+
+SELECT category, AVG(CONVERT(float, rating_average)) as avg_bag_rating
+FROM women_bags
+GROUP BY category 
+
+SELECT category, AVG(CONVERT(float, rating_average)) as avg_shoe_rating
+FROM women_shoes
+GROUP BY category 
+
+-- 17,
+
+-- The number of bag sales based on brand popularity and fulfillment type
+
+SELECT DISTINCT brand, fulfillment_type, 
+CASE
+	WHEN SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) > 100 THEN 'Popular'
+	ELSE 'Not Popular' 
+	END AS popularity_status,
+SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) as total_quantity_sold
+FROM men_bags
+ORDER BY total_quantity_sold DESC
+
+SELECT DISTINCT brand, fulfillment_type, 
+CASE
+	WHEN SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) > 100 THEN 'Popular'
+	ELSE 'Not Popular' 
+	END AS popularity_status,
+SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) as total_quantity_sold
+FROM women_bags
+ORDER BY total_quantity_sold DESC
+
+-- The number of bag sales based on brand popularity and fulfillment type
+
+SELECT DISTINCT brand, fulfillment_type, 
+CASE
+	WHEN SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) > 100 THEN 'Popular'
+	ELSE 'Not Popular' 
+	END AS popularity_status,
+SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) as total_quantity_sold
+FROM men_shoes
+ORDER BY total_quantity_sold DESC
+
+SELECT DISTINCT brand, fulfillment_type, 
+CASE
+	WHEN SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) > 100 THEN 'Popular'
+	ELSE 'Not Popular' 
+	END AS popularity_status,
+SUM(quantity_sold) OVER (PARTITION BY brand, fulfillment_type) as total_quantity_sold
+FROM women_shoes
+ORDER BY total_quantity_sold DESC
+
+-- 18,
+
+-- The number of bag sales according to brand popularity
+
+WITH PopularityCTE AS (
+    SELECT brand, SUM(review_count) AS popularity_score
+    FROM men_bags
+    GROUP BY brand
+)
+SELECT men_bags.brand, 
+       COUNT(*) AS product_count, 
+       SUM(quantity_sold) AS total_quantity_sold,
+       CASE
+           WHEN PopularityCTE.popularity_score > 100 THEN 'High Popularity'
+           WHEN PopularityCTE.popularity_score > 50 THEN 'Moderate Popularity'
+           ELSE 'Low Popularity'
+       END AS popularity_level	
+FROM men_bags
+JOIN PopularityCTE ON men_bags.brand = PopularityCTE.brand
+GROUP BY men_bags.brand, PopularityCTE.popularity_score
+ORDER BY total_quantity_sold DESC
+
+--
+
+WITH PopularityCTE AS (
+    SELECT brand, SUM(review_count) AS popularity_score
+    FROM women_bags
+    GROUP BY brand
+)
+SELECT women_bags.brand, 
+       COUNT(*) AS product_count, 
+       SUM(quantity_sold) AS total_quantity_sold,
+       CASE
+           WHEN PopularityCTE.popularity_score > 100 THEN 'High Popularity'
+           WHEN PopularityCTE.popularity_score > 50 THEN 'Moderate Popularity'
+           ELSE 'Low Popularity'
+       END AS popularity_level	
+FROM women_bags
+JOIN PopularityCTE ON women_bags.brand = PopularityCTE.brand
+GROUP BY women_bags.brand, PopularityCTE.popularity_score
+ORDER BY total_quantity_sold DESC
+
+-- The number of shoe sales according to brand popularity
+
+WITH PopularityCTE AS (
+    SELECT brand, SUM(review_count) AS popularity_score
+    FROM men_shoes
+    GROUP BY brand
+)
+SELECT men_shoes.brand, 
+       COUNT(*) AS product_count, 
+       SUM(quantity_sold) AS total_quantity_sold,
+       CASE
+           WHEN PopularityCTE.popularity_score > 100 THEN 'High Popularity'
+           WHEN PopularityCTE.popularity_score > 50 THEN 'Moderate Popularity'
+           ELSE 'Low Popularity'
+       END AS popularity_level	
+FROM men_shoes
+JOIN PopularityCTE ON men_shoes.brand = PopularityCTE.brand
+GROUP BY men_shoes.brand, PopularityCTE.popularity_score
+ORDER BY total_quantity_sold DESC
+
 -- 
 
+WITH PopularityCTE AS (
+    SELECT brand, SUM(review_count) AS popularity_score
+    FROM women_shoes
+    GROUP BY brand
+)
+SELECT women_shoes.brand, 
+       COUNT(*) AS product_count, 
+       SUM(quantity_sold) AS total_quantity_sold,
+       CASE
+           WHEN PopularityCTE.popularity_score > 100 THEN 'High Popularity'
+           WHEN PopularityCTE.popularity_score > 50 THEN 'Moderate Popularity'
+           ELSE 'Low Popularity'
+       END AS popularity_level	
+FROM women_shoes
+JOIN PopularityCTE ON women_shoes.brand = PopularityCTE.brand
+GROUP BY women_shoes.brand, PopularityCTE.popularity_score
+ORDER BY total_quantity_sold DESC
+
+-- 19,
+
+-- Total number of images per bag product in each category and reliability rating
+
+WITH TotalImageCTE AS (
+	SELECT category, COUNT(number_of_images) AS total_images_per_product
+	FROM men_bags
+	GROUP BY category
+)
+SELECT category, total_images_per_product,
+CASE
+	WHEN total_images_per_product > 500 THEN 'High Reliability'
+	WHEN total_images_per_product > 100 THEN 'Moderate Reliability'
+	ELSE 'Low Reliability'
+END AS reliability
+FROM TotalImageCTE
+ORDER BY total_images_per_product DESC
 
 
+WITH TotalImageCTE AS (
+	SELECT category, COUNT(number_of_images) AS total_images_per_product
+	FROM women_bags
+	GROUP BY category
+)
+SELECT category, total_images_per_product,
+CASE
+	WHEN total_images_per_product > 500 THEN 'High Reliability'
+	WHEN total_images_per_product > 100 THEN 'Moderate Reliability'
+	ELSE 'Low Reliability'
+END AS reliability
+FROM TotalImageCTE
+ORDER BY total_images_per_product DESC
+
+-- Total number of images per bag product in each category and reliability rating
+
+WITH TotalImageCTE AS (
+	SELECT category, COUNT(number_of_images) AS total_images_per_product
+	FROM men_shoes
+	GROUP BY category
+)
+SELECT category, total_images_per_product,
+CASE
+	WHEN total_images_per_product > 500 THEN 'High Reliability'
+	WHEN total_images_per_product > 100 THEN 'Moderate Reliability'
+	ELSE 'Low Reliability'
+END AS reliability
+FROM TotalImageCTE
+ORDER BY total_images_per_product DESC
+
+
+WITH TotalImageCTE AS (
+	SELECT category, COUNT(number_of_images) AS total_images_per_product
+	FROM women_shoes
+	GROUP BY category
+)
+SELECT category, total_images_per_product,
+CASE
+	WHEN total_images_per_product > 500 THEN 'High Reliability'
+	WHEN total_images_per_product > 100 THEN 'Moderate Reliability'
+	ELSE 'Low Reliability'
+END AS reliability
+FROM TotalImageCTE
+ORDER BY total_images_per_product DESC
+
+-- 20, 
+
+-- Number of bag products of only brands with a larger number of products than the average of the entire table
+
+SELECT brand, 
+       COUNT(*) AS product_count
+FROM men_bags
+GROUP BY brand
+HAVING COUNT(*) > (SELECT AVG(quantity_sold) FROM men_bags)
+ORDER BY product_count DESC
+
+SELECT brand, 
+       COUNT(*) AS product_count
+FROM women_bags
+GROUP BY brand
+HAVING COUNT(*) > (SELECT AVG(quantity_sold) FROM women_bags)
+ORDER BY product_count DESC
+
+-- Number of shoe products of only brands with a larger number of products than the average of the entire table
+
+SELECT brand, 
+       COUNT(*) AS product_count
+FROM men_shoes
+GROUP BY brand
+HAVING COUNT(*) > (SELECT AVG(quantity_sold) FROM men_shoes)
+ORDER BY product_count DESC
+
+SELECT brand, 
+       COUNT(*) AS product_count
+FROM women_shoes
+GROUP BY brand
+HAVING COUNT(*) > (SELECT AVG(quantity_sold) FROM women_shoes)
+ORDER BY product_count DESC
 
 
 
