@@ -1,7 +1,6 @@
 ## <p align="center">Tiki E-Commerce Products</p>
 
-![Alt text](https://drive.google.com/uc?id=1T33dXtSi1Ej7sTno7BMt-scq5yaqYelz)
-
+![Alt text](https://drive.google.com/uc?id=1bJXd2PflKoGGz4VqIzOdzrnQL-NyYA9l)
 
 
 :round_pushpin:	**About**
@@ -50,7 +49,7 @@ https://www.kaggle.com/datasets/michaelminhpham/vietnamese-tiki-e-commerce-datas
 <div align="left"> 
 <img src="https://drive.google.com/uc?id=1n7apQ1eWy0KmHEbJfeQFVQyc2f9L6-Wm"
 width="220" height="200"> 
-<img src="https://drive.google.com/uc?id=1sKNCMZLg3ezodz1PztADDPGMF6O5A2fj"
+<img src="https://drive.google.com/uc?id=1IzEW-U6TeFNkYf-e08BIngGuaJOe3fNU"
 width="220" height="200">
 </div>
 
@@ -79,7 +78,7 @@ width="220" height="200">
 <div align="left"> 
 <img src="https://drive.google.com/uc?id=1PpQt0ld6g723Pu3lCXN11uXB-nVJOQWt"
 width="220" height="200"> 
-<img src="https://drive.google.com/uc?id=1zITHe9V9_Rz0NmL1qWJv9lVcmt0uEp3o"
+<img src="https://drive.google.com/uc?id=1FIAttI0DYCvohda9AETVAFe7CLRj8wH6 "
 width="220" height="200">
 </div>
 
@@ -200,7 +199,7 @@ width="220" height="200">
 
 **5,**
 <div align="left"> 
-<img src="https://drive.google.com/uc?id=13lJ61mm8rH0qNqttf-GWAxbt8ws2pTBG">
+<img src="https://drive.google.com/uc?id=1NtadxRSPqpSLyEGOg39pRVpCdXapJzvY">
 </div>
 <br>
 
@@ -280,7 +279,7 @@ width="220" height="200">
 
 **5,**
 <div align="left"> 
-<img src="https://drive.google.com/uc?id=1FDet8_DfIiz9iVw2RMztFMyq76mak55I">
+<img src="https://drive.google.com/uc?id=1Oi07zR3DUS1i_dRTH6rGKLGDI122e9VT">
 </div>
 <br>
 
@@ -303,7 +302,7 @@ width="220" height="200">
 
 **8,**
 <div align="left"> 
-<img src="https://drive.google.com/uc?id=1atdFpGDobfL9msPW0b0a0UpiXrNCMDQF">
+<img src="https://drive.google.com/uc?id=1Ut11l1dmZdk4eAeVXArGv2niNnJ6iUW-">
 </div>
 <br>
 
