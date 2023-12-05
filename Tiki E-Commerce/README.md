@@ -20,9 +20,13 @@ Welcome to my project on the Tiki e-commerce platform! This project focuses on a
 :newspaper:	 **Data Link**
 https://www.kaggle.com/datasets/michaelminhpham/vietnamese-tiki-e-commerce-dataset
 
-:bulb: **Summary**
+:earth_americas: **Exploration**
 
 **I, Some main discoveries in SQL**
+***Note**: 
+- I deleted "Cây cảnh", "Bàn ghế các loại" and "Kính Hiển Vi" because they are not included in shoe products.
+- "Root" is plastic sandals
+-  I still have some ideas about favourite_count column but somehow the dataset I use in kaggle has nothing.
 
 **1,**
 * **Total bags and shoes sold**
@@ -320,5 +324,81 @@ width="220" height="200">
 </div>
 <br>
 
+:bulb: **Summary**
+
+**1.	Overview:**
+- The total quantity of bags sold is 146,000 units, with 106,000 for men and 40,000 for women.
+- The total quantity of shoes sold is around 106,000 units, with 95,000 for men and 11,000 for women.
+
+**2.	Average Selling Prices:**
+- The average selling price for men's bags is 580,000 VND, while for women's bags, it is 250,000 VND.
+- The average selling price for men's shoes is 370,000 VND, and for women's shoes, it is approximately 284,000 VND.
+
+**3.	Revenue:**
+- The highest revenue in the men's bag category is from "Fashion" (around 6.8 billion VND).
+- The highest revenue in women's bag categories is from "Short Wallet" and "Fashion" (approximately nearly 2 billion VND in total).
+- The highest revenue in the men's shoe category is from "Fashion" (around 6.2 billion VND).
+- The highest revenue in women's shoe categories is from "Horizontal Strap Sandals" and "Fashion" (about nearly 500 million VND in total).
+
+**4.	Average Ratings:**
+- Men's bag categories have the highest average ratings in "Fashion," "Men's Backpack," and "Men's Crossbody Bag."
+- Women's bag categories have the highest average ratings in "Short Wallet," "Women's Fashion Bag," and "Fashion."
+- Men's shoe categories have the highest average ratings in "Men's Shoe Accessories," "Men's Sandals," and "Fashion."
+- Women's shoe categories have the highest average ratings in "Women's Sandals," "Fashion," and "Women's Boots."
+
+**5.	Brands and Quantity Sold:**
+- Among the top 10 bag brands and top 10 shoe brands, OEM brands dominate with the highest product count and sales.
+- HARAS and LAZA lead in the quantity of men's bags sold, while Ximo and Hier are noteworthy in men's shoes.
+- "Root" is among the categories with the highest cashback in both men's and women's bags and shoes.
+
+**6.	Payment and Sales Timeframe:**
+
+- It seems that pay-later is more common for men's bags, whereas the opposite is observed for women's shoes.
+- Men's bags appear to sell better with a longer creation date, while women's bags sell well within 100 - 1500 days.
+- Shoes seem to sell better with a creation date between 500 – 2000 days, while women's shoes sell well within about 500 - 1500 days.
+
+**7.	Platform Reliability:**
+- Most products, both bags and shoes, have videos, enhancing Tiki's reliability for prospective buyers.
+
+**8.	Delivery Types:**
+- Generally, dropshipping is the most common fulfillment type for both bags and shoes, followed by Tiki delivery.
+
 :bar_chart:	**Conclusion**
 
+**Evaluation of Conclusions:**
+
+**1.	Market Overview:**
+- The clear categorization between men's and women's bags and shoes provides a better understanding of customer needs.
+- The average selling price and revenue offer an overview of the common price range for the products.
+
+**2.	Product and Brand Assessment:**
+- The average ratings indicate customer satisfaction with both bags and shoes, especially in the fashion categories.
+- The dominance of OEM brands and specific brands in each product category demonstrates diversity in the supply source and customer trust.
+
+**3.	Payment and Sales Timeframe:**
+- The difference in payment methods between men's and women's bags/shoes may reflect variations in customer shopping behavior.
+- The sales timeframe and its relation to the product creation date provide crucial insights into sales trends.
+
+**4.	Platform Reliability and Delivery Methods:**
+- The prevalence of videos on Tiki reflects a commitment to transparency and reliability.
+- The popularity of dropshipping and Tiki delivery for delivery methods may indicate their efficiency and convenience.
+
+**Potential and Future Predictions:**
+
+**1.	Growth Potential:**
+- With significant sales volume and revenue, the bag and shoe market on Tiki has substantial growth potential in the future.
+- Growth could stem from product diversity and the expansion of new brands.
+
+**2.	Challenges and Opportunities:**
+- Attention should be paid to competition among brands and efforts to maintain or enhance platform reliability.
+- Opportunities may arise from optimizing marketing strategies, special promotions, and developing new products based on market trends.
+
+**3.	Payment Methods and Supply Source:**
+- The payment method differences present opportunities for targeted marketing strategies and special promotions.
+- Maintaining and expanding the supply source for well-known brands and OEMs can optimize profitability.
+
+**4.	Trends and Market Shifts:**
+- Monitoring new trends in the bag and shoe market, such as increased emphasis on fashion products and changes in customer preferences, is crucial.
+- Market shifts may include a rise in pay-later payment methods and a transition from dropshipping to direct delivery services.
+
+![Alt text](https://drive.google.com/uc?id=1-kUUkJP3fM0pLr25WnyxdHMl5mAaLXga)
