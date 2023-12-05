@@ -12,8 +12,7 @@ Welcome to my project on the Tiki e-commerce platform! This project focuses on a
 
 <div align="center">
   <img src="https://drive.google.com/uc?id=1Yf0SEslJz3Ah4_cniyGxw0rE0WxZI3Jz" alt="Image 1" width="100" height="100">
-  <img src="https://drive.google.com/uc?id=1jo9enN0824o1ZRBDm9aVGlVeVhYHVFDg
-" alt="Image 2" width="100" height="100">
+  <img src="https://drive.google.com/uc?id=1yfM6teHb7239co2JZ-hhpLauKO__7h3O" alt="Image 2" width="100" height="100">
   <img src="https://drive.google.com/uc?id=1nV6GakOpOpakGTARtwlKOygdNmUcvs7_" alt="Image 3" width="100" height="100">
 </div>
 <br>
@@ -179,7 +178,7 @@ width="220" height="200">
 
 **3,**
 <div align="left"> 
-<img src="https://drive.google.com/uc?id=130j1jHil-SJ9MitKLBcNIXXzqMMUhZXq">
+<img src="https://drive.google.com/uc?id=1zstU5fhuaiOqQmnrux7zWZ8Mzkg4tFPs">
 </div>
 <br>
 
