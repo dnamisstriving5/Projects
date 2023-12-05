@@ -161,7 +161,9 @@ width="220" height="200">
 **II, Visualizations**
 ***Note**: I added "revenue" column in Excel with the formula **revenue = price * quantity sold**
 
-**1, Bag products part**
+**Bag products part**
+
+**1,**
 
 <div align="left"> 
 <img src="https://drive.google.com/uc?id=11YDQDXa00FqAck-oB5VxE5EmdQ7OtnMQ"> 
@@ -169,6 +171,155 @@ width="220" height="200">
 </div>
 <br>
 
+**2,**
 <div align="left"> 
 <img src="https://drive.google.com/uc?id=1d3y_BLW_052X4qEpwbYxH20TzGjRFdXo">
 </div>
+<br>
+
+**3,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=130j1jHil-SJ9MitKLBcNIXXzqMMUhZXq">
+</div>
+<br>
+
+
+**4,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=17QP9beIaZakgfGwahuFnKi-UXl_qSNhh">
+</div>
+<br>
+
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1Dx2jgJbvp9aZ83QoCdCXcb2rHoogl9Ie">
+</div>
+<br>
+
+**5,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=13lJ61mm8rH0qNqttf-GWAxbt8ws2pTBG">
+</div>
+<br>
+
+**6,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1eg-FHv3FGRvWbRgJBvpd1SumUA9JFLIW">
+</div>
+<br>
+
+**7,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1wZqXluWR-ZJJonKZt6u2yd4WqYAGN1Ya">
+</div>
+<br>
+
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=16kWJ6LrSbxiUOQjYA8Esoo7ZGxgNYQMe">
+</div>
+<br>
+
+**8,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1ALD_xj29XBox4IBUAwel5rfC1W8BQU4F">
+</div>
+<br>
+
+**9,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1hjLie01Uzli78ykITjHa9siki9ySm8wT">
+</div>
+<br>
+
+**10,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1lQb4mUKotLmvY5BG1CafyE8F9pM5i1D6">
+</div>
+<br>
+
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1F9hdoXrLd19QHuvaDwxeND18Z81VCJML">
+</div>
+<br>
+
+**Shoe products part**
+
+**1,**
+
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1nG1yDRn2UwSoLqTSmsKIy7SIMgAFzE-V"> 
+<img src="https://drive.google.com/uc?id=1JuLQaSMEuGQLjFza5VlKTB2xHhz8GG93">
+</div>
+<br>
+
+**2,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1VbUvCPHMiCmDoAFth62C5fWmNyipUoy2">
+</div>
+<br>
+
+**3,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1U34qWZOKyTBhAO3YuwGMtXVey8NIQXMP">
+</div>
+<br>
+
+
+**4,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1eJtmu5JvtrRsknGN27FS9JnqbzTtQWHu">
+</div>
+<br>
+
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1Moi--RWFLamE9Bg9ZsYVvk6ZQIYuQ2_K">
+</div>
+<br>
+
+**5,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1FDet8_DfIiz9iVw2RMztFMyq76mak55I">
+</div>
+<br>
+
+**6,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1AhJMTEEPZY5AD-CICr6XU5VfBV3FsZbK">
+</div>
+<br>
+
+**7,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1BNbuI5umdojdD2oMlfenmUowNgmk37zi">
+</div>
+<br>
+
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1pFvJCMO1O3unRiAlsISWSsIrgNYxvY2k">
+</div>
+<br>
+
+**8,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1atdFpGDobfL9msPW0b0a0UpiXrNCMDQF">
+</div>
+<br>
+
+**9,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1VrT8GpkeS3RJDt3l2UvlfcwN2AFJ9QJ-">
+</div>
+<br>
+
+**10,**
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=1K4uh4ts6e7KSSK9ignkiQ2j1mY54AVB9">
+</div>
+<br>
+
+<div align="left"> 
+<img src="https://drive.google.com/uc?id=19HrVdqM7VElAWZbFE5_-7MU8oi3slc7Q">
+</div>
+<br>
+
+:bar_chart:	**Conclusion**
+
