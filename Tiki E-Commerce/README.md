@@ -1,6 +1,6 @@
 ## <p align="center">Tiki E-Commerce Products</p>
 
-![Alt text](https://drive.google.com/uc?id=1bJXd2PflKoGGz4VqIzOdzrnQL-NyYA9l)
+![Alt text](https://drive.google.com/uc?id=19sxtjno5rA65bFCLyGdloRLoDj0MQt2l)
 
 
 :round_pushpin:	**About**
