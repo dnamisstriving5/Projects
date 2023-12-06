@@ -73,25 +73,6 @@ width="220" height="200">
 </div>
 
 **4,**
-* **Top 10 bag brands by product count**
-
-<div align="left"> 
-<img src="https://drive.google.com/uc?id=1PpQt0ld6g723Pu3lCXN11uXB-nVJOQWt"
-width="220" height="200"> 
-<img src="https://drive.google.com/uc?id=1FIAttI0DYCvohda9AETVAFe7CLRj8wH6 "
-width="220" height="200">
-</div>
-
-* **Top 10 shoe brands by product count**
-
-<div align="left"> 
-<img src="https://drive.google.com/uc?id=1MhKEFLyA8gvHdZtQqMO6E4-vY2Bs5v7R"
-width="220" height="200"> 
-<img src="https://drive.google.com/uc?id=1RfOReLW9htwnqzyx_1le5E75AJg6YlBQ"
-width="220" height="200">
-</div>
-
-**5,**
 
 * **Top 10 bag sales brands**
 
@@ -111,7 +92,7 @@ width="220" height="200">
 width="220" height="200">
 </div>
 
-**6,**
+**5,**
 
 * **Top 10 highest cashback by bag categories**
 
@@ -130,37 +111,9 @@ width="220" height="200">
 <img src="https://drive.google.com/uc?id=1GeEDFatmlwnkgXSh0scJOGy47re2Voa8"
 width="220" height="200">
 </div>
-
-**7,**
-
-* **Total bag products sold by pay-later**
-
-<div align="left"> 
-<img src="https://drive.google.com/uc?id=1AG5yscwtDTGHcw7S0IYGYS9w35pv0eua"> 
-</div>
-
-* **Total shoe products sold by pay-later**
-
-<div align="left"> 
-<img src="https://drive.google.com/uc?id=1vL72_uvojwEJivAOQ8LPxZKNfyo0xeOI"> 
-</div>
-
-**8,**
-
-* **Number of bag products with and without video**
-
-<div align="left"> 
-<img src="https://drive.google.com/uc?id=1-so1_wUrCwEWkt3GSHhIuPFLWBj4q_PP"> 
-</div>
-
-* **Number of shoe products with and without video**
-
-<div align="left"> 
-<img src="https://drive.google.com/uc?id=1_DYdyRsy2lYAlnhdv-4h1b1h-qu6ouZX"> 
-</div>
 <br>
 
-**II, Visualizations**
+**II, Some visualization**
 ***Note**: I added "revenue" column in Excel with the formula **revenue = price * quantity sold**
 
 **Bag products part**
