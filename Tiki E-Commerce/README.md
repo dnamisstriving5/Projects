@@ -23,7 +23,7 @@ https://www.kaggle.com/datasets/michaelminhpham/vietnamese-tiki-e-commerce-datas
 
 **I, Some main discoveries in SQL**
 ***Note**: 
-- I deleted "Cây cảnh", "Bàn ghế các loại" and "Kính Hiển Vi" because they are not included in shoe products.
+- I deleted "Cây cảnh", "Bàn ghế các loại" and "Kính Hiển Vi" because they are not included in shoe categories.
 - "Root" is plastic sandals
 -  I still have some ideas about favourite_count column but somehow the dataset I use in kaggle has nothing.
 
@@ -113,7 +113,8 @@ width="220" height="200">
 </div>
 <br>
 
-**II, Some visualization**
+**II, Visualizations**
+
 ***Note**: I added "revenue" column in Excel with the formula **revenue = price * quantity sold**
 
 **Bag products part**
@@ -293,7 +294,7 @@ width="220" height="200">
 - The highest revenue in women's shoe categories is from "Horizontal Strap Sandals" and "Fashion" (about nearly 500 million VND in total).
 
 **4.	Average Ratings:**
-- Men's bag categories have the highest average ratings in "Fashion," "Men's Backpack," and "Men's Crossbody Bag."
+- Men's bag categories have the highest average ratings in "Fashion," "Men's Backpack," and "Men's Crossbody Bag." 
 - Women's bag categories have the highest average ratings in "Short Wallet," "Women's Fashion Bag," and "Fashion."
 - Men's shoe categories have the highest average ratings in "Men's Shoe Accessories," "Men's Sandals," and "Fashion."
 - Women's shoe categories have the highest average ratings in "Women's Sandals," "Fashion," and "Women's Boots."
