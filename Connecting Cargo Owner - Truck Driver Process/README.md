@@ -1,6 +1,6 @@
 ## <p align="center">Connecting Cargo Owner - Truck Driver Process</p>
 
-![Alt text](https://drive.google.com/uc?id=16fhx53qi4a_IvTuNZep-VwQR352o0knB)
+![Alt text](https://drive.google.com/uc?id=1CQa1_Icp29cF0X3zdtvQ0t5Pe0eKfyK-)
 
 
 :round_pushpin:	**Project Introduction**
@@ -11,7 +11,7 @@ Welcome to TRANS, a convenient mobile application designed for the transportatio
 - **Case** and **Brainstorming Ideas**
 - Drawing **Business Process**
 - Using **UML** to draw diagrams (**Activity, Sequence, State and Use Case**)
-- Drawing **Mockups**
+- Drawing **Wireframes**
 - Writing **SRS** Document
 
 :globe_with_meridians: **Tools**
